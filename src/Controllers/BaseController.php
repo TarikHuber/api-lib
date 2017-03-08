@@ -6,7 +6,7 @@ use Respect\Validation\Validator as v;
 use APILIB\Helpers\ErrorHelper as eh;
 use APILIB\Validation\Validator as validator;
 
-class Base_Controller{
+class BaseController{
 
 	protected $validator;
 	protected $error_helper;

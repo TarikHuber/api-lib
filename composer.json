@@ -1,0 +1,22 @@
+{
+  "name": "tarik.huber/api-lib",
+  "description": "Library for REST API",
+  "keywords": ["library","rest","api"],
+  "homepage": "https://github.com/TarikHuber/api-lib",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tarik Huber",
+      "email": "tarik.huber@ics-logistik.com"
+    }
+  ],
+  "require": {
+    "illuminate/database": "^5.2"
+  },
+  "autoload":{
+    "psr-4":{
+      "APILIB\\": "src"
+    }
+
+  }
+}

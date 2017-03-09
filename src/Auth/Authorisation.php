@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Auth;
+namespace APILIB\Auth;
 use APILIB\Auth\Authentication;
 
 class Authorisation {

@@ -1,14 +1,14 @@
 <?php
 
 namespace APILIB\Helpers;
-
+use APILIB\Localisation\Locale as l;
 
 class ErrorHelper {
 
 	protected $invoked=false;
 
 	protected $errors=[
-		20102=>'API Key not valid.',
+		20102=>l::getMessage('api_key_not_valid'),
 		20103=>'You have no access to this section.',
 		20201=>'SignUp failed!',
 		20110=>'Email not registered.',

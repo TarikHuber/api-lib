@@ -24,6 +24,8 @@ class Locale {
 
       if(array_key_exists($locale, self::$locales)){
         self::$locales[$locale]=array_merge(self::$locales[$locale], $messages);
+      }else{
+        self::$locales[$locale]=$messages;
       }
 
     }

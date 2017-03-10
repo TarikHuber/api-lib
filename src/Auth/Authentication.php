@@ -13,13 +13,10 @@ class Authentication {
 
 		$api_key=$request->getHeaderLine($settings['auth_header']['api_key_name']);
 		$locale=$request->getHeaderLine('locale');
+		
+		l::addLocaleMessages('en',en::getMessages());
+		l::addLocaleMessages('de',de::getMessages());
 
-		$locales=[
-			'en'=>en::getMessages(),
-			'de'=>de::getMessages()
-		];
-
-		l::setLocales($locales);
 
 		if (strpos($api_key, 'Bearer ') !== false) {
 			$api_key=str_replace('Bearer ','',$api_key);

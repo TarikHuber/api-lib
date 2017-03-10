@@ -7,7 +7,16 @@ class de {
 
   public static function getMessages(){
     return [
-      'api_key_not_valid'=>'Ungültiger API Schlüssell!'
+      'invalid_api_key_message'=>'Ungültiger API Schlüssell!',
+      'signup_failed_message'=>'Registrierung fehlgeschlagen!',
+      'email_not_registered_message'=>'Email nicht registriert',
+      'user_not_activated_message'=>'Benutzer nicht aktiviert',
+      'invalid_password_message'=>'Falsches Passwort!',
+      'validation_failed_message'=>'Validierung fehlgeschlagen!',
+      'creation_failed_message'=>'Erstellung fehlgeschlagen!',
+      'updating_failed_message'=>'Änderung fehlgeschlagen!',
+      'deletion_failed_message'=>'Löschen fehlgeschlagen!',
+      'authorisation_failed_message'=>'Kein Zugang zu diesem Bereich!'
     ];
   }
 

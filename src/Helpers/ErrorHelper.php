@@ -8,7 +8,6 @@ class ErrorHelper {
 	protected $invoked=false;
 
 	protected $errors=[
-		20102=>l::getMessage('api_key_not_valid'),
 		20103=>'You have no access to this section.',
 		20201=>'SignUp failed!',
 		20110=>'Email not registered.',
@@ -33,7 +32,7 @@ class ErrorHelper {
 
 		$data['error'] = true;
 		$data['error_id'] = 20102;
-		$data['error_message'] = $this->errors[$data['error_id']];
+		$data['error_message'] = l::getMessage('api_key_not_valid');
 		$this->setInvoked(true);
 		return  $response->withJson($data);
 	}

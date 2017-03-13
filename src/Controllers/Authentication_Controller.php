@@ -59,8 +59,6 @@ class Authentication_Controller{
 
 		$params['name']=$request->getParam('name');
 		$params['email']=$request->getParam('email');
-		$params['phone']=$request->getParam('phone');
-		$params['fax']=$request->getParam('fax');
 		$params['password_hash']=password_hash($request->getParam('password'),PASSWORD_DEFAULT);
 		$params['api_key']=md5(uniqid(rand(), true));
 

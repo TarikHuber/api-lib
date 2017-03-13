@@ -10,6 +10,8 @@ use APILIB\Localisation\Locale as l;
 use APILIB\Localisation\de;
 use APILIB\Localisation\en;
 
+
+
 class Authentication_Controller{
 
 	protected $User;
@@ -34,6 +36,8 @@ class Authentication_Controller{
 
 		l::addLocaleMessages('en',en::getMessages());
 		l::addLocaleMessages('de',de::getMessages());
+
+		v::with('APILIB\\Validation\\Rules\\');
 
 		$locale=$request->getHeaderLine('locale');
 

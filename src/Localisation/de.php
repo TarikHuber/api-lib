@@ -16,6 +16,10 @@ class de {
       'creation_failed_message'=>'Erstellung fehlgeschlagen!',
       'updating_failed_message'=>'Änderung fehlgeschlagen!',
       'deletion_failed_message'=>'Löschen fehlgeschlagen!',
+      'unknown_error'=>'Unerwarteter Fehler aufgetreten!',
+      'new_user_registered'=>'Neuer Benutzer registriert: {{name}}',
+      'user_name'=>'Name: {{name}}',
+      'user_email'=>'E-Mail: {{email}}',
       'authorisation_failed_message'=>'Kein Zugang zu diesem Bereich!'
     ];
   }

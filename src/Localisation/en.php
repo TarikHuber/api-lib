@@ -16,6 +16,10 @@ class en {
       'creation_failed_message'=>'Creation failed!',
       'updating_failed_message'=>'Updating failed!',
       'deletion_failed_message'=>'Deletion failed!',
+      'unknown_error'=>'Unknown error occured!',
+      'new_user_registered'=>'New user registered: {{name}}',
+      'user_name'=>'Name: {{name}}',
+      'user_email'=>'E-Mail: {{email}}',
       'authorisation_failed_message'=>'You have no access to this section!'
     ];
   }

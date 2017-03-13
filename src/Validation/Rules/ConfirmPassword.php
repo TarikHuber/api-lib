@@ -1,5 +1,5 @@
 <?php
-namespace App\Validation\Rules;
+namespace APILIB\Validation\Rules;
 
 use Respect\Validation\Rules\AbstractRule;
 use Respect\Validation\Validator as v;

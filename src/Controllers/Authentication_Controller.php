@@ -5,7 +5,7 @@ namespace APILIB\Controllers;
 use Respect\Validation\Validator as v;
 use Respect\Validation\Exceptions\NestedValidationException;
 use APILIB\Auth\Authorisation;
-use App\Helpers\EmailHelper;
+use APILIB\Helpers\EmailHelper;
 use APILIB\Localisation\Locale as l;
 use APILIB\Localisation\de;
 use APILIB\Localisation\en;

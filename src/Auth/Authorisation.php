@@ -19,7 +19,7 @@ class Authorisation {
 		//Get the client_id
 		//If no send use the first available
 		if(empty($client_id)){
-			if(!empty($user_clients)){
+			if(count($user_clients)!=0){
 				$client_id=$user_clients[0]['client_id'];
 			}
 		}
@@ -89,9 +89,9 @@ class Authorisation {
 		$user_grants_string="";
 
 		$roles=$UsersClientsRoles->where('user_id', $user_id)
-							->where('client_id', $client_id)
-							->with('role')
-							->get();
+		->where('client_id', $client_id)
+		->with('role')
+		->get();
 
 		foreach($roles as $role){
 			$user_grants_string.=$role['role']['grants'];

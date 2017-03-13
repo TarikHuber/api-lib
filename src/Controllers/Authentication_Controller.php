@@ -111,7 +111,6 @@ class Authentication_Controller{
 			'email'=>$user['email'] ,
 			'api_key'=>$user['api_key'],
 			'clients'=>$clients,
-			'isSMTP'=>null,
 		];
 		return  $response->withJson($data);
 

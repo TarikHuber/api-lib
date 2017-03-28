@@ -121,7 +121,7 @@ class Authorisation {
 
 		$routes=[];
 
-		foreach($this->router->getRoutes() as $routeIndex=>$route){
+		foreach($router->getRoutes() as $routeIndex=>$route){
 
 			$routes[$route->getName()]=$route->getName();
 		}
